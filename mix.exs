@@ -16,10 +16,11 @@ defmodule KanjiFrequency.Mixfile do
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
     [
+      mod: {KanjiFrequency, []},
       extra_applications: [
         :logger,
         :httpoison,
-        :hound
+        :valid_url
       ]
     ]
   end
@@ -37,7 +38,8 @@ defmodule KanjiFrequency.Mixfile do
     [
       {:poison, "~> 3.1"},
       {:httpoison, "~> 0.11.1"},
-      {:floki, "~> 0.17.0"}
+      {:floki, "~> 0.17.0"},
+      {:valid_url, "~> 0.1.1"}
     ]
   end
 end
