@@ -1,19 +1,5 @@
 # KanjiFrequency
 
-**TODO: Add description**
+Crawler written in Elixir designed to crawl Japanese websites in order to create a histogram of the most commonly used Kanji characters on the internet.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `kanji_frequency` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:kanji_frequency, "~> 0.1.0"}]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/kanji_frequency](https://hexdocs.pm/kanji_frequency).
-
+To run, just `cd` into the root directory and run `iex -S mix`. By doing so you'll have access to `KanjiFrequency.Histogram.view/0` which will report back the histogram results.
